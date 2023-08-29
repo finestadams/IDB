@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --white: #fff;
+  --lenkie-default: #1a2d5b;
+  --lenkie-orange: #f5a623;
+}
+
+* {
+  font-family: 'Satoshi', serif;
+  font-weight: 400;
+}
+
+.input-tel__input {
+  padding: 10px 14px !important;
+  height: auto !important;
+  min-height: auto !important;
+  font-family: 'Satoshi' !important;
+}
+
+.input-tel__label {
+  display: none !important;
+}
+
+.country-selector__input {
+  height: 43px !important;
+  min-height: 43px !important;
+}
+
+.country-selector__country-flag {
+  margin-top: 1.8px !important;
+}
+
+.notie-background-success {
+  background-color: #27ae60 !important;
+  /* background-color: var(--theme-primary) !important; */
+}
+
+.notie-background-warning {
+  background-color: #ed8936 !important;
+}
+
+.notie-background-error {
+  background-color: #e53e3e !important;
+}
+
+.notie-background-info {
+  background-color: var(--lenkie-default) !important;
+}
+
+.notie-background-info .notie-textbox-inner {
+  color: var(--white) !important;
+}
+
+.notie-background-neutral {
+  background-color: #e2e8f0 !important;
+  color: #1a202c !important;
+}
+
+.notie-textbox-inner {
+  font-family: 'Satoshi Light';
+  font-size: 14px !important;
+}
+
+.notie-textbox-inner::first-letter {
+  text-transform: capitalize !important;
+}
+
+.notie-textbox {
+  color: var(--white) !important;
+  padding: 10px 20px !important;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: var(--white);
+  --tw-ring-color: none;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    0 0 rgba(0, 0, 0, 0);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 rgba(0, 0, 0, 0));
+  border-color: none;
+}
+
+.notie-alert {
+  z-index: 90000000 !important;
+}
+
+.notie-container {
+  box-shadow: none !important;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+#flavor-factory-logo {
+  height: 60px !important;
+}
+
+#appear-here-limited-logo {
+  height: 20px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.spinner-transform-50 {
+  transform: translate(-50%, -50%) !important;
+}
+
+.spinner-top {
+  top: calc(50% - 73px) !important;
+}
+
+.button--loading::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 0.5s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+input::placeholder {
+  font-size: 14px;
+}
